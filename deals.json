@@ -1,301 +1,301 @@
 {
- "site": {
-  "name": "SnowCheap BC",
-  "base_url": "https://busseyboy01.github.io/snowcheap-bc",
-  "contact_email": "sponsor@example.com (placeholder)"
- },
- "deals": [
-  {
-   "id": "grouse-early-bird-2627",
-   "title": "Grouse Mountain 2026/27 Early Bird season pass from $399",
-   "category": "lift tickets/passes",
-   "resort": "Grouse Mountain",
-   "price": "from $399",
-   "regular_price": null,
-   "url": "https://www.grousemountain.com/early-bird",
-   "source_url": "https://www.grousemountain.com/early-bird",
-   "start_date": null,
-   "expiry_date": "2026-10-13",
-   "last_verified": "2026-10-12",
-   "notes": "Prices go up October 14. Extra 10% off for families. Unlimited or Weekday passes; perks include 50% off an Ikon Session Pass 3-Day.",
-   "affiliate_url": "",
-   "check": [
-    "$399",
-    "October 14"
-   ]
+  "site": {
+    "name": "SnowCheap BC",
+    "base_url": "https://busseyboy01.github.io/snowcheap-bc",
+    "contact_email": "sponsor@example.com (placeholder)"
   },
-  {
-   "id": "grouse-snow-school-20",
-   "title": "Grouse snow school: 20% off ski & snowboard programs, ages 3-18",
-   "category": "discounts for students/kids/seniors",
-   "resort": "Grouse Mountain",
-   "price": "20% off",
-   "regular_price": null,
-   "url": "https://www.grousemountain.com/early-bird",
-   "source_url": "https://www.grousemountain.com/early-bird",
-   "start_date": null,
-   "expiry_date": null,
-   "last_verified": "2026-10-12",
-   "notes": "'For a limited time' - no end date published.",
-   "affiliate_url": "",
-   "check": [
-    "save 20%"
-   ]
-  },
-  {
-   "id": "cypress-season-pass-2627",
-   "title": "Cypress Mountain 2026/27 season passes from $389 (Bronze) / $849 (Gold)",
-   "category": "early-bird deadlines",
-   "resort": "Cypress Mountain",
-   "price": "from $389",
-   "regular_price": null,
-   "url": "https://www.cypressmountain.com/downhill-season-passes",
-   "source_url": "https://www.cypressmountain.com/downhill-season-passes",
-   "start_date": null,
-   "expiry_date": "2026-10-13",
-   "last_verified": "2026-10-12",
-   "notes": "Cypress homepage: 'Season Pass prices go up after Oct 13'. Adult Bronze (weekend nights) $389, Adult Gold unlimited $849.",
-   "affiliate_url": "",
-   "check": [
-    "$389",
-    "$849"
-   ]
-  },
-  {
-   "id": "cypress-snow-school-20",
-   "title": "Cypress: 20% off child & youth Snow School multi-day programs",
-   "category": "discounts for students/kids/seniors",
-   "resort": "Cypress Mountain",
-   "price": "20% off",
-   "regular_price": null,
-   "url": "https://www.cypressmountain.com/",
-   "source_url": "https://www.cypressmountain.com/",
-   "start_date": null,
-   "expiry_date": null,
-   "last_verified": "2026-10-12",
-   "notes": "Listed as a limited-time offer; no end date published.",
-   "affiliate_url": "",
-   "check": [
-    "20% off"
-   ]
-  },
-  {
-   "id": "seymour-3ski-2627",
-   "title": "Mt Seymour 3Ski pass: 3 visits for $139 adult / $119 youth / $79 child",
-   "category": "lift tickets/passes",
-   "resort": "Mt Seymour",
-   "price": "$139",
-   "regular_price": null,
-   "url": "https://mtseymour.ca/tickets-passes/3ski-passes",
-   "source_url": "https://mtseymour.ca/tickets-passes/3ski-passes",
-   "start_date": "2026-11-03",
-   "expiry_date": null,
-   "last_verified": "2026-10-12",
-   "notes": "On sale November 3. Save up to 44% vs max-price ticket. Valid Sun 4:30pm-Fri close, blackouts Dec 19-Jan 3 and Feb 13-15. Free shuttle included. Rental add-on $120/$120/$90.",
-   "affiliate_url": "",
-   "check": [
-    "$139",
-    "$119",
-    "$79"
-   ]
-  },
-  {
-   "id": "sunpeaks-preseason-2627",
-   "title": "Sun Peaks adult alpine season pass $1,569 pre-season (save $400)",
-   "category": "early-bird deadlines",
-   "resort": "Sun Peaks",
-   "price": "$1,569",
-   "regular_price": "$1,969",
-   "url": "https://www.sunpeaksresort.com/ski-ride/tickets-passes/season-passes",
-   "source_url": "https://www.sunpeaksresort.com/ski-ride/tickets-passes/season-passes",
-   "start_date": null,
-   "expiry_date": "2026-10-31",
-   "last_verified": "2026-10-12",
-   "notes": "Pre-season pricing until Oct 31, 2026. Youth $1,146 (reg $1,438), child $650 (reg $815).",
-   "affiliate_url": "",
-   "check": [
-    "$1,569",
-    "October 31"
-   ]
-  },
-  {
-   "id": "sunpeaks-student-senior-2627",
-   "title": "Sun Peaks university student pass $1,058, senior $1,305 (pre-season)",
-   "category": "discounts for students/kids/seniors",
-   "resort": "Sun Peaks",
-   "price": "$1,058",
-   "regular_price": "$1,438",
-   "url": "https://www.sunpeaksresort.com/ski-ride/tickets-passes/season-passes",
-   "source_url": "https://www.sunpeaksresort.com/ski-ride/tickets-passes/season-passes",
-   "start_date": null,
-   "expiry_date": "2026-10-31",
-   "last_verified": "2026-10-12",
-   "notes": "Senior (65-79) $1,305 vs $1,638; Super Senior 80+ $650.",
-   "affiliate_url": "",
-   "check": [
-    "$1,058",
-    "$1,305"
-   ]
-  },
-  {
-   "id": "bigwhite-early-bird-2627",
-   "title": "Big White early bird adult season pass $1,099 (save $770)",
-   "category": "early-bird deadlines",
-   "resort": "Big White",
-   "price": "$1,099",
-   "regular_price": "$1,869",
-   "url": "https://www.bigwhite.com/season-passes",
-   "source_url": "https://www.bigwhite.com/season-passes",
-   "start_date": null,
-   "expiry_date": "2026-10-18",
-   "last_verified": "2026-10-12",
-   "notes": "Early bird June 1-Oct 18; pre-season Oct 19-Nov 25 is $1,239. Youth $579, child $419.",
-   "affiliate_url": "",
-   "check": [
-    "$1099",
-    "Oct 18"
-   ]
-  },
-  {
-   "id": "bigwhite-student-senior-2627",
-   "title": "Big White early bird: student pass from $564, Club 65 senior $769",
-   "category": "discounts for students/kids/seniors",
-   "resort": "Big White",
-   "price": "$564",
-   "regular_price": "$959",
-   "url": "https://www.bigwhite.com/season-passes",
-   "source_url": "https://www.bigwhite.com/season-passes",
-   "start_date": null,
-   "expiry_date": "2026-10-18",
-   "last_verified": "2026-10-12",
-   "notes": "Okanagan full-time student $564 (reg $959); CAN/USA student $749 (reg $1,274); senior 65+ $769 (reg $1,309).",
-   "affiliate_url": "",
-   "check": [
-    "$564",
-    "$769"
-   ]
-  },
-  {
-   "id": "winter-extreme-swap-vancouver-2026",
-   "title": "Winter Extreme Ski & Board Swap (Canadian Ski Patrol) - Oct 17-18",
-   "category": "swaps and events",
-   "resort": "Fairgrounds Public Racket Club - Capilano, North Vancouver",
-   "price": "$5 entry",
-   "regular_price": null,
-   "url": "https://www.skipatrol.ca/winterextreme/vancouver/",
-   "source_url": "https://www.skipatrol.ca/winterextreme/vancouver/",
-   "start_date": "2026-10-17",
-   "expiry_date": "2026-10-18",
-   "last_verified": "2026-10-12",
-   "notes": "Sat 9am-5pm, Sun 10am-4pm. Adults $5, kids 6-12 $2, family $10. Sunday 25% off red tags. Gear check-in Fri Oct 16 3-7pm.",
-   "affiliate_url": "",
-   "check": [
-    "October 17",
-    "$5.00"
-   ]
-  },
-  {
-   "id": "sportinglife-ski-sale",
-   "title": "Sporting Life sale: up to 40% off ski and snowboard",
-   "category": "gear sales",
-   "resort": "Sporting Life (online)",
-   "price": "up to 40% off",
-   "regular_price": null,
-   "url": "https://www.sportinglife.ca/en-CA/sale/",
-   "source_url": "https://www.sportinglife.ca/en-CA/sale/",
-   "start_date": null,
-   "expiry_date": null,
-   "last_verified": "2026-10-12",
-   "notes": "Sale page also lists clearance up to 50% off and free shipping over $99. Selection changes often.",
-   "affiliate_url": "",
-   "check": [
-    "Up to 40% off Ski"
-   ]
-  },
-  {
-   "id": "whistler-unlimited-2627",
-   "title": "Whistler Blackcomb Unlimited Season Pass from $1,644 CAD (adult)",
-   "category": "lift tickets/passes",
-   "resort": "Whistler Blackcomb",
-   "price": "$1,644 CAD",
-   "regular_price": null,
-   "url": "https://www.whistlerblackcomb.com/Plan-Your-Trip/Lift-Access/Passes/Unlimited-Season-Pass.aspx",
-   "source_url": "https://www.whistlerblackcomb.com/Plan-Your-Trip/Lift-Access/Passes/Unlimited-Season-Pass.aspx",
-   "start_date": null,
-   "expiry_date": "2027-04-30",
-   "last_verified": "2026-10-12",
-   "notes": "No deadline is shown on the official page; listed until end of season (2027-04-30). Adult $1,644, Teen $987, Child $577, Senior $1,115 (CAD). Verified manually in a browser (page needs JavaScript).",
-   "affiliate_url": "",
-   "check": [],
-   "manual_check": true
-  },
-  {
-   "id": "whistler-edge-2627",
-   "title": "Whistler EDGE Cards: 2, 5 or 10 days from $295 CAD (adult)",
-   "category": "lift tickets/passes",
-   "resort": "Whistler Blackcomb",
-   "price": "from $295 CAD",
-   "regular_price": null,
-   "url": "https://www.whistlerblackcomb.com/plan-your-trip/lift-access/edge-cards.aspx",
-   "source_url": "https://www.whistlerblackcomb.com/plan-your-trip/lift-access/edge-cards.aspx",
-   "start_date": null,
-   "expiry_date": "2027-04-30",
-   "last_verified": "2026-10-12",
-   "notes": "No deadline is shown on the official page; listed until end of season (2027-04-30). Adult CAD: 10-Day $1,011 (Restricted $929), 5-Day $590 (Restricted $542), 2-Day $295 (Restricted $261). For residents of Canada and Washington State only. Verified manually in a browser (page needs JavaScript).",
-   "affiliate_url": "",
-   "check": [],
-   "manual_check": true
-  },
-  {
-   "id": "epic-pass-2627",
-   "title": "Epic Pass from US$1,169 (adult, USD)",
-   "category": "lift tickets/passes",
-   "resort": "Epic Pass (Vail Resorts)",
-   "price": "US$1,169 (USD)",
-   "regular_price": null,
-   "url": "https://www.epicpass.com/passes/epic-pass.aspx",
-   "source_url": "https://www.epicpass.com/passes/epic-pass.aspx",
-   "start_date": null,
-   "expiry_date": "2027-04-30",
-   "last_verified": "2026-10-12",
-   "notes": "No deadline is shown on the official page; listed until end of season (2027-04-30). Prices in USD: Adult US$1,169, Teen/Young Adult US$929, Child US$599. Verified manually in a browser (page needs JavaScript).",
-   "affiliate_url": "",
-   "check": [],
-   "manual_check": true
-  },
-  {
-   "id": "epic-local-2627",
-   "title": "Epic Local Pass from US$869 (adult, USD)",
-   "category": "lift tickets/passes",
-   "resort": "Epic Pass (Vail Resorts)",
-   "price": "US$869 (USD)",
-   "regular_price": null,
-   "url": "https://www.epicpass.com/passes/epic-local-pass.aspx",
-   "source_url": "https://www.epicpass.com/passes/epic-local-pass.aspx",
-   "start_date": null,
-   "expiry_date": "2027-04-30",
-   "last_verified": "2026-10-12",
-   "notes": "No deadline is shown on the official page; listed until end of season (2027-04-30). Prices in USD: Adult US$869, Teen/Young Adult US$689, Child US$455. Verified manually in a browser (page needs JavaScript).",
-   "affiliate_url": "",
-   "check": [],
-   "manual_check": true
-  },
-  {
-   "id": "revelstoke-midweek-eb-2627",
-   "title": "Revelstoke Adult Midweek Season Pass $1,879 early bird",
-   "category": "early-bird deadlines",
-   "resort": "Revelstoke Mountain Resort",
-   "price": "$1,879",
-   "regular_price": "$2,349",
-   "url": "https://shop.revelstokemountainresort.com/s/season-passes",
-   "source_url": "https://shop.revelstokemountainresort.com/s/season-passes",
-   "start_date": null,
-   "expiry_date": "2026-11-30",
-   "last_verified": "2026-10-12",
-   "notes": "Early bird ends Nov 30. The page doesn't show the year, so this assumes the 2026/27 season. Regular adult pass $2,349. Verified manually in a browser (page needs JavaScript).",
-   "affiliate_url": "",
-   "check": [],
-   "manual_check": true
-  }
- ]
+  "deals": [
+    {
+      "id": "grouse-early-bird-2627",
+      "title": "Grouse Mountain 2026/27 Early Bird season pass from $399",
+      "category": "lift tickets/passes",
+      "resort": "Grouse Mountain",
+      "price": "from $399",
+      "regular_price": null,
+      "url": "https://www.grousemountain.com/early-bird",
+      "source_url": "https://www.grousemountain.com/early-bird",
+      "start_date": null,
+      "expiry_date": "2026-10-13",
+      "last_verified": "2026-10-13",
+      "notes": "Prices go up October 14. Extra 10% off for families. Unlimited or Weekday passes; perks include 50% off an Ikon Session Pass 3-Day.",
+      "affiliate_url": "",
+      "check": [
+        "$399",
+        "October 14"
+      ]
+    },
+    {
+      "id": "grouse-snow-school-20",
+      "title": "Grouse snow school: 20% off ski & snowboard programs, ages 3-18",
+      "category": "discounts for students/kids/seniors",
+      "resort": "Grouse Mountain",
+      "price": "20% off",
+      "regular_price": null,
+      "url": "https://www.grousemountain.com/early-bird",
+      "source_url": "https://www.grousemountain.com/early-bird",
+      "start_date": null,
+      "expiry_date": null,
+      "last_verified": "2026-10-13",
+      "notes": "'For a limited time' - no end date published.",
+      "affiliate_url": "",
+      "check": [
+        "save 20%"
+      ]
+    },
+    {
+      "id": "cypress-season-pass-2627",
+      "title": "Cypress Mountain 2026/27 season passes from $389 (Bronze) / $849 (Gold)",
+      "category": "early-bird deadlines",
+      "resort": "Cypress Mountain",
+      "price": "from $389",
+      "regular_price": null,
+      "url": "https://www.cypressmountain.com/downhill-season-passes",
+      "source_url": "https://www.cypressmountain.com/downhill-season-passes",
+      "start_date": null,
+      "expiry_date": "2026-10-13",
+      "last_verified": "2026-10-13",
+      "notes": "Cypress homepage: 'Season Pass prices go up after Oct 13'. Adult Bronze (weekend nights) $389, Adult Gold unlimited $849.",
+      "affiliate_url": "",
+      "check": [
+        "$389",
+        "$849"
+      ]
+    },
+    {
+      "id": "cypress-snow-school-20",
+      "title": "Cypress: 20% off child & youth Snow School multi-day programs",
+      "category": "discounts for students/kids/seniors",
+      "resort": "Cypress Mountain",
+      "price": "20% off",
+      "regular_price": null,
+      "url": "https://www.cypressmountain.com/",
+      "source_url": "https://www.cypressmountain.com/",
+      "start_date": null,
+      "expiry_date": null,
+      "last_verified": "2026-10-13",
+      "notes": "Listed as a limited-time offer; no end date published.",
+      "affiliate_url": "",
+      "check": [
+        "20% off"
+      ]
+    },
+    {
+      "id": "seymour-3ski-2627",
+      "title": "Mt Seymour 3Ski pass: 3 visits for $139 adult / $119 youth / $79 child",
+      "category": "lift tickets/passes",
+      "resort": "Mt Seymour",
+      "price": "$139",
+      "regular_price": null,
+      "url": "https://mtseymour.ca/tickets-passes/3ski-passes",
+      "source_url": "https://mtseymour.ca/tickets-passes/3ski-passes",
+      "start_date": "2026-11-03",
+      "expiry_date": null,
+      "last_verified": "2026-10-13",
+      "notes": "On sale November 3. Save up to 44% vs max-price ticket. Valid Sun 4:30pm-Fri close, blackouts Dec 19-Jan 3 and Feb 13-15. Free shuttle included. Rental add-on $120/$120/$90.",
+      "affiliate_url": "",
+      "check": [
+        "$139",
+        "$119",
+        "$79"
+      ]
+    },
+    {
+      "id": "sunpeaks-preseason-2627",
+      "title": "Sun Peaks adult alpine season pass $1,569 pre-season (save $400)",
+      "category": "early-bird deadlines",
+      "resort": "Sun Peaks",
+      "price": "$1,569",
+      "regular_price": "$1,969",
+      "url": "https://www.sunpeaksresort.com/ski-ride/tickets-passes/season-passes",
+      "source_url": "https://www.sunpeaksresort.com/ski-ride/tickets-passes/season-passes",
+      "start_date": null,
+      "expiry_date": "2026-10-31",
+      "last_verified": "2026-10-13",
+      "notes": "Pre-season pricing until Oct 31, 2026. Youth $1,146 (reg $1,438), child $650 (reg $815).",
+      "affiliate_url": "",
+      "check": [
+        "$1,569",
+        "October 31"
+      ]
+    },
+    {
+      "id": "sunpeaks-student-senior-2627",
+      "title": "Sun Peaks university student pass $1,058, senior $1,305 (pre-season)",
+      "category": "discounts for students/kids/seniors",
+      "resort": "Sun Peaks",
+      "price": "$1,058",
+      "regular_price": "$1,438",
+      "url": "https://www.sunpeaksresort.com/ski-ride/tickets-passes/season-passes",
+      "source_url": "https://www.sunpeaksresort.com/ski-ride/tickets-passes/season-passes",
+      "start_date": null,
+      "expiry_date": "2026-10-31",
+      "last_verified": "2026-10-13",
+      "notes": "Senior (65-79) $1,305 vs $1,638; Super Senior 80+ $650.",
+      "affiliate_url": "",
+      "check": [
+        "$1,058",
+        "$1,305"
+      ]
+    },
+    {
+      "id": "bigwhite-early-bird-2627",
+      "title": "Big White early bird adult season pass $1,099 (save $770)",
+      "category": "early-bird deadlines",
+      "resort": "Big White",
+      "price": "$1,099",
+      "regular_price": "$1,869",
+      "url": "https://www.bigwhite.com/season-passes",
+      "source_url": "https://www.bigwhite.com/season-passes",
+      "start_date": null,
+      "expiry_date": "2026-10-18",
+      "last_verified": "2026-10-13",
+      "notes": "Early bird June 1-Oct 18; pre-season Oct 19-Nov 25 is $1,239. Youth $579, child $419.",
+      "affiliate_url": "",
+      "check": [
+        "$1099",
+        "Oct 18"
+      ]
+    },
+    {
+      "id": "bigwhite-student-senior-2627",
+      "title": "Big White early bird: student pass from $564, Club 65 senior $769",
+      "category": "discounts for students/kids/seniors",
+      "resort": "Big White",
+      "price": "$564",
+      "regular_price": "$959",
+      "url": "https://www.bigwhite.com/season-passes",
+      "source_url": "https://www.bigwhite.com/season-passes",
+      "start_date": null,
+      "expiry_date": "2026-10-18",
+      "last_verified": "2026-10-13",
+      "notes": "Okanagan full-time student $564 (reg $959); CAN/USA student $749 (reg $1,274); senior 65+ $769 (reg $1,309).",
+      "affiliate_url": "",
+      "check": [
+        "$564",
+        "$769"
+      ]
+    },
+    {
+      "id": "winter-extreme-swap-vancouver-2026",
+      "title": "Winter Extreme Ski & Board Swap (Canadian Ski Patrol) - Oct 17-18",
+      "category": "swaps and events",
+      "resort": "Fairgrounds Public Racket Club - Capilano, North Vancouver",
+      "price": "$5 entry",
+      "regular_price": null,
+      "url": "https://www.skipatrol.ca/winterextreme/vancouver/",
+      "source_url": "https://www.skipatrol.ca/winterextreme/vancouver/",
+      "start_date": "2026-10-17",
+      "expiry_date": "2026-10-18",
+      "last_verified": "2026-10-13",
+      "notes": "Sat 9am-5pm, Sun 10am-4pm. Adults $5, kids 6-12 $2, family $10. Sunday 25% off red tags. Gear check-in Fri Oct 16 3-7pm.",
+      "affiliate_url": "",
+      "check": [
+        "October 17",
+        "$5.00"
+      ]
+    },
+    {
+      "id": "sportinglife-ski-sale",
+      "title": "Sporting Life sale: up to 40% off ski and snowboard",
+      "category": "gear sales",
+      "resort": "Sporting Life (online)",
+      "price": "up to 40% off",
+      "regular_price": null,
+      "url": "https://www.sportinglife.ca/en-CA/sale/",
+      "source_url": "https://www.sportinglife.ca/en-CA/sale/",
+      "start_date": null,
+      "expiry_date": null,
+      "last_verified": "2026-10-13",
+      "notes": "Sale page also lists clearance up to 50% off and free shipping over $99. Selection changes often.",
+      "affiliate_url": "",
+      "check": [
+        "Up to 40% off Ski"
+      ]
+    },
+    {
+      "id": "whistler-unlimited-2627",
+      "title": "Whistler Blackcomb Unlimited Season Pass from $1,644 CAD (adult)",
+      "category": "lift tickets/passes",
+      "resort": "Whistler Blackcomb",
+      "price": "$1,644 CAD",
+      "regular_price": null,
+      "url": "https://www.whistlerblackcomb.com/Plan-Your-Trip/Lift-Access/Passes/Unlimited-Season-Pass.aspx",
+      "source_url": "https://www.whistlerblackcomb.com/Plan-Your-Trip/Lift-Access/Passes/Unlimited-Season-Pass.aspx",
+      "start_date": null,
+      "expiry_date": "2027-04-30",
+      "last_verified": "2026-10-12",
+      "notes": "No deadline is shown on the official page; listed until end of season (2027-04-30). Adult $1,644, Teen $987, Child $577, Senior $1,115 (CAD). Verified manually in a browser (page needs JavaScript).",
+      "affiliate_url": "",
+      "check": [],
+      "manual_check": true
+    },
+    {
+      "id": "whistler-edge-2627",
+      "title": "Whistler EDGE Cards: 2, 5 or 10 days from $295 CAD (adult)",
+      "category": "lift tickets/passes",
+      "resort": "Whistler Blackcomb",
+      "price": "from $295 CAD",
+      "regular_price": null,
+      "url": "https://www.whistlerblackcomb.com/plan-your-trip/lift-access/edge-cards.aspx",
+      "source_url": "https://www.whistlerblackcomb.com/plan-your-trip/lift-access/edge-cards.aspx",
+      "start_date": null,
+      "expiry_date": "2027-04-30",
+      "last_verified": "2026-10-12",
+      "notes": "No deadline is shown on the official page; listed until end of season (2027-04-30). Adult CAD: 10-Day $1,011 (Restricted $929), 5-Day $590 (Restricted $542), 2-Day $295 (Restricted $261). For residents of Canada and Washington State only. Verified manually in a browser (page needs JavaScript).",
+      "affiliate_url": "",
+      "check": [],
+      "manual_check": true
+    },
+    {
+      "id": "epic-pass-2627",
+      "title": "Epic Pass from US$1,169 (adult, USD)",
+      "category": "lift tickets/passes",
+      "resort": "Epic Pass (Vail Resorts)",
+      "price": "US$1,169 (USD)",
+      "regular_price": null,
+      "url": "https://www.epicpass.com/passes/epic-pass.aspx",
+      "source_url": "https://www.epicpass.com/passes/epic-pass.aspx",
+      "start_date": null,
+      "expiry_date": "2027-04-30",
+      "last_verified": "2026-10-12",
+      "notes": "No deadline is shown on the official page; listed until end of season (2027-04-30). Prices in USD: Adult US$1,169, Teen/Young Adult US$929, Child US$599. Verified manually in a browser (page needs JavaScript).",
+      "affiliate_url": "",
+      "check": [],
+      "manual_check": true
+    },
+    {
+      "id": "epic-local-2627",
+      "title": "Epic Local Pass from US$869 (adult, USD)",
+      "category": "lift tickets/passes",
+      "resort": "Epic Pass (Vail Resorts)",
+      "price": "US$869 (USD)",
+      "regular_price": null,
+      "url": "https://www.epicpass.com/passes/epic-local-pass.aspx",
+      "source_url": "https://www.epicpass.com/passes/epic-local-pass.aspx",
+      "start_date": null,
+      "expiry_date": "2027-04-30",
+      "last_verified": "2026-10-12",
+      "notes": "No deadline is shown on the official page; listed until end of season (2027-04-30). Prices in USD: Adult US$869, Teen/Young Adult US$689, Child US$455. Verified manually in a browser (page needs JavaScript).",
+      "affiliate_url": "",
+      "check": [],
+      "manual_check": true
+    },
+    {
+      "id": "revelstoke-midweek-eb-2627",
+      "title": "Revelstoke Adult Midweek Season Pass $1,879 early bird",
+      "category": "early-bird deadlines",
+      "resort": "Revelstoke Mountain Resort",
+      "price": "$1,879",
+      "regular_price": "$2,349",
+      "url": "https://shop.revelstokemountainresort.com/s/season-passes",
+      "source_url": "https://shop.revelstokemountainresort.com/s/season-passes",
+      "start_date": null,
+      "expiry_date": "2026-11-30",
+      "last_verified": "2026-10-12",
+      "notes": "Early bird ends Nov 30. The page doesn't show the year, so this assumes the 2026/27 season. Regular adult pass $2,349. Verified manually in a browser (page needs JavaScript).",
+      "affiliate_url": "",
+      "check": [],
+      "manual_check": true
+    }
+  ]
 }
