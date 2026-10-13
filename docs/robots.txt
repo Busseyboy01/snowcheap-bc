@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://busseyboy01.github.io/snowcheap-bc/sitemap.xml

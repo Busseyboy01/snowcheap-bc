@@ -1,0 +1,1889 @@
+
+  <!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+
+<head>
+
+            <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PKWR4FZ');</script>
+        <!-- End Google Tag Manager -->
+    
+    
+<link rel="preload" href="https://cdn.jsdelivr.net/combine/npm/slick-carousel@1.8.1/slick/slick.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+</noscript>
+
+
+<script>
+    /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+    /* This file is meant as a standalone workflow for
+    - testing support for link[rel=preload]
+    - enabling async CSS loading in browsers that do not support rel=preload
+    - applying rel preload css once loaded, whether supported or not.
+    */
+    (function( w ){
+        "use strict";
+        // rel=preload support test
+        if( !w.loadCSS ){
+            w.loadCSS = function(){};
+        }
+        // define on the loadCSS obj
+        var rp = loadCSS.relpreload = {};
+        // rel=preload feature support test
+        // runs once and returns a function for compat purposes
+        rp.support = (function(){
+            var ret;
+            try {
+                ret = w.document.createElement( "link" ).relList.supports( "preload" );
+            } catch (e) {
+                ret = false;
+            }
+            return function(){
+                return ret;
+            };
+        })();
+
+        // if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+        // then change that media back to its intended value on load
+        rp.bindMediaToggle = function( link ){
+            // remember existing media attr for ultimate state, or default to 'all'
+            var finalMedia = link.media || "all";
+
+            function enableStylesheet(){
+                // unbind listeners
+                if( link.addEventListener ){
+                    link.removeEventListener( "load", enableStylesheet );
+                } else if( link.attachEvent ){
+                    link.detachEvent( "onload", enableStylesheet );
+                }
+                link.setAttribute( "onload", null );
+                link.media = finalMedia;
+            }
+
+            // bind load handlers to enable media
+            if( link.addEventListener ){
+                link.addEventListener( "load", enableStylesheet );
+            } else if( link.attachEvent ){
+                link.attachEvent( "onload", enableStylesheet );
+            }
+
+            // Set rel and non-applicable media type to start an async request
+            // note: timeout allows this to happen async to let rendering continue in IE
+            setTimeout(function(){
+                link.rel = "stylesheet";
+                link.media = "only x";
+            });
+            // also enable media after 3 seconds,
+            // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+            setTimeout( enableStylesheet, 3000 );
+        };
+
+        // loop through link elements in DOM
+        rp.poly = function(){
+            // double check this to prevent external calls from running
+            if( rp.support() ){
+                return;
+            }
+            var links = w.document.getElementsByTagName( "link" );
+            for( var i = 0; i < links.length; i++ ){
+                var link = links[ i ];
+                // qualify links to those with rel=preload and as=style attrs
+                if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+                    // prevent rerunning on link
+                    link.setAttribute( "data-loadcss", true );
+                    // bind listeners to toggle media back
+                    rp.bindMediaToggle( link );
+                }
+            }
+        };
+
+        // if unsupported, run the polyfill
+        if( !rp.support() ){
+            // run once at least
+            rp.poly();
+
+            // rerun poly on an interval until onload
+            var run = w.setInterval( rp.poly, 500 );
+            if( w.addEventListener ){
+                w.addEventListener( "load", function(){
+                    rp.poly();
+                    w.clearInterval( run );
+                } );
+            } else if( w.attachEvent ){
+                w.attachEvent( "onload", function(){
+                    rp.poly();
+                    w.clearInterval( run );
+                } );
+            }
+        }
+
+
+        // commonjs
+        if( typeof exports !== "undefined" ){
+            exports.loadCSS = loadCSS;
+        }
+        else {
+            w.loadCSS = loadCSS;
+        }
+    }( typeof global !== "undefined" ? global : this ) );
+
+</script>
+<script></script><!-- here to ensure a non-blocking load still occurs in IE and Edge, even if scripts follow loadCSS in head -->
+    <meta charset="utf-8" />
+<style>/* @see https://github.com/aFarkas/lazysizes#broken-image-symbol */.js img.lazyload:not([src]) { visibility: hidden; }/* @see https://github.com/aFarkas/lazysizes#automatically-setting-the-sizes-attribute */.js img.lazyloaded[data-sizes=auto] { display: block; width: 100%; }/* Transition effect. */.js .lazyload, .js .lazyloading { opacity: 0; }.js .lazyloaded { opacity: 1; -webkit-transition: opacity 2000ms; transition: opacity 2000ms; }</style>
+<meta name="description" content="Ski or snowboard three times with or without rental equipment &amp; save up to 44% at Mt Seymour, Vancouver&#039;s family owned and operated ski resort. 100% Canadian." />
+<link rel="canonical" href="https://mtseymour.ca/tickets-passes/3ski-passes" />
+<link rel="image_src" href="https://mtseymour.ca/sites/default/files/styles/max_2600x2600/public/2025-11/Jan%2018_Pow%20%289%20of%2011%29.jpg?itok=GDa0myIc" />
+<meta property="og:site_name" content="Mt Seymour" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mtseymour.ca/tickets-passes/3ski-passes" />
+<meta property="og:title" content="3Ski Passes" />
+<meta property="og:description" content="Ski or snowboard three times with or without rental equipment &amp; save up to 44% at Mt Seymour, Vancouver&#039;s family owned and operated ski resort. 100% Canadian." />
+<meta property="og:image" content="https://mtseymour.ca/sites/default/files/styles/max_2600x2600/public/2025-11/Jan%2018_Pow%20%289%20of%2011%29.jpg?itok=GDa0myIc" />
+<meta name="Generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://mtseymour.ca/#organization",
+            "url": "https://mtseymour.ca/",
+            "description": "100% Canadian. Mt Seymour Ski Resort, where Vancouver learns to ski and snowboard. Vancouver\u0027s family-owned and operated ski resort, less than 30 minutes from East Vancouver and Burnaby.",
+            "sameAs": [
+                "https://www.facebook.com/MtSeymour",
+                "https://twitter.com/Mt_Seymour",
+                "https://www.instagram.com/mtseymour/"
+            ],
+            "name": "Mt Seymour",
+            "telephone": "6049862261",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "6049862261",
+                "email": "info@mtseymour.ca",
+                "url": "https://mtseymour.ca/"
+            },
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://mtseymour.ca/themes/custom/origin/logo.svg"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1700 Mt Seymour Road",
+                "addressLocality": "North Vancouver",
+                "addressRegion": "BC",
+                "postalCode": "V7G 1L3",
+                "addressCountry": "USA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "49.365433953270774",
+                "longitude": "-122.9483347305702"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://mtseymour.ca/tickets-passes/3ski-passes/#webpage",
+            "description": "Ski or snowboard three times with or without rental equipment \u0026 save up to 44% at Mt Seymour, Vancouver\u0027s family owned and operated ski resort. 100% Canadian.",
+            "publisher": {
+                "@type": "Organization",
+                "@id": "https://mtseymour.ca/#organization"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://mtseymour.ca/#website",
+            "name": "Mt Seymour",
+            "url": "https://mtseymour.ca/",
+            "publisher": {
+                "@type": "Organization",
+                "@id": "https://mtseymour.ca/#organization"
+            },
+            "inLanguage": "en-US"
+        }
+    ]
+}</script>
+<link rel="icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>Mt Seymour Ski Resort - Vancouver&#039;s most affordable ski resort</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_YA64ZToZ0tjcrktTa-pzVlxROyqjiajEd6gPmaCREGw.css?delta=0&amp;language=en&amp;theme=origin&amp;include=eJxFiEkKwzAMRS8krCOVH1uxBfKAFC_S07dQSlZvgDL0VW0eMMrITU7b0fjR1GVsyoaIm7tEoEr8e8wilKfL17zD9C3UpSj4VLvEU8a6dA6arlUH_0ALjupYLbj4XrD0nLTH2odpNCkUd1zS-UDIB9diQdw" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_958Ftx2Qh13-kam4C6FMJQjo0gZQgCP5_EnwDIu2SfY.css?delta=1&amp;language=en&amp;theme=origin&amp;include=eJxFiEkKwzAMRS8krCOVH1uxBfKAFC_S07dQSlZvgDL0VW0eMMrITU7b0fjR1GVsyoaIm7tEoEr8e8wilKfL17zD9C3UpSj4VLvEU8a6dA6arlUH_0ALjupYLbj4XrD0nLTH2odpNCkUd1zS-UDIB9diQdw" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,700;0,800;1,400&amp;display=swap" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_wVGRBcpalMVys1_fvxUD-k_qj1y2H4mHVl-94FmEm_E.css?delta=3&amp;language=en&amp;theme=origin&amp;include=eJxFiEkKwzAMRS8krCOVH1uxBfKAFC_S07dQSlZvgDL0VW0eMMrITU7b0fjR1GVsyoaIm7tEoEr8e8wilKfL17zD9C3UpSj4VLvEU8a6dA6arlUH_0ALjupYLbj4XrD0nLTH2odpNCkUd1zS-UDIB9diQdw" />
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" type="image/svg+xml" href="/themes/custom/origin/images/favicon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/origin/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/custom/origin/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/themes/custom/origin/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/themes/custom/origin/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/themes/custom/origin/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/themes/custom/origin/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/themes/custom/origin/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Inntopia -->
+    <meta name="com.silverpop.brandeddomains" content="www.pages03.net,mtseymour.ca" />
+
+</head>
+
+<body class="path-node page-node-type-page bg-white">
+
+            <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKWR4FZ"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    
+        <a href="#main-content" class="center-horizontal pos-fixed opacity-0 focusable button skip-link">
+        Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="d-flex flex-direction-column overflow-x-hidden pos-relative layout-container">
+
+    
+<header class="container site-header z-index-30 bg-white" role="banner">
+    <div class="grid-area-main h-header d-flex ai-center jc-space-between pos-relative">
+
+
+        <a href="/" title="Home" rel="home" class="image logo">
+            <img src="/themes/custom/origin/logo.svg" alt="Home"/>
+        </a>
+
+
+        <div class="d-flex t-micetype f-w-medium h-100 utility">
+
+            <div class="bg-background d-flex ai-center jc-center weather-widget">
+                <div id="block-weather-widget" class="block block-config-pages block-config-pages-block">
+  
+    
+      
+  
+<button id="conditions-toggle" type="button" class="reset h-100 d-flex ai-center jc-center p-h-2" aria-haspopup="true" aria-expanded="false" aria-controls="conditions-overlay" >
+
+    
+<i class="pos-relative t-c-green weather-icon wi wi-fog"></i>
+
+    <span class="d-block f-icon button-arrow-down temp">
+        4°C
+    </span>
+
+</button>
+
+  </div>
+
+            </div>
+
+            <div class="hide-small lh-1">
+                <nav role="navigation" aria-labelledby="block-utility-menu-menu" id="block-utility-menu" class="block block-menu navigation menu--utility">
+            
+  <h2 class="visually-hidden" id="block-utility-menu-menu">Utility menu</h2>
+  
+
+        
+              <ul class="transition-ui reset d-flex ai-center jc-center t-t-uppercase menu">
+                    <li class="menu-item">
+        <a href="/about-us/employment" class="d-block" data-drupal-link-system-path="node/6">Employment</a>
+              </li>
+                <li class="menu-item">
+        <a href="/the-mountain/hours-of-operation" class="d-block" title="Mt Seymour Apparel" data-drupal-link-system-path="node/14">Hours of Operation</a>
+              </li>
+                <li class="menu-item">
+        <a href="/the-mountain/getting-here" class="d-block" data-drupal-link-system-path="node/16">Getting Here</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://mtseymour.ca/tickets-passes/season-pass-reservations" class="d-block">Season Pass Reservations</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://mtseymour.secure-cdn.na2.accessoticketing.com/profile-login/signin" target="_blank" class="d-block">Guest Login</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+            </div>
+
+            
+<a href="/the-mountain/mountain-safety" class="hide-phone z-index-20 t-micetype f-w-medium bg-primary d-flex ai-center jc-center p-h-2 t-t-uppercase t-align-center mountain-safety">
+        Mountain Safety
+</a>
+
+        </div>
+
+
+        <button id="main-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu" class="hide-large hamburger hamburger--squeeze h-100">
+            <span class="hamburger-box">
+                <span class="hamburger-inner">
+                </span>
+            </span>
+            <span class="f-w-medium t-c-blue-dark lh-1 d-block t-t-uppercase text">Menu</span>
+        </button>
+
+
+        <div id="main-menu" class="transition-ui pos-absolute top-header h-100-header z-index-40 menu-padding main-menu" aria-hidden="true" aria-labelledby="main-menu-toggle">
+            <nav role="navigation" aria-labelledby="block-origin-main-menu-menu" id="block-origin-main-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-origin-main-menu-menu">Main navigation</h2>
+  
+
+        
+              <ul class="transition-ui reset lh-1 f-w-bold d-flex ai-center jc-center menu-width menu-fontsize menu">
+                    <li class="menu-item menu-item--collapsed">
+        <button class="reset t-t-uppercase w-100 t-c-blue-dark pseudo-after f-icon overflow-hidden" data-url="/" id="main-menu-the-mountain" aria-controls="submenu-the-mountain" tabindex="-1" aria-expanded="false">The Mountain</button>
+      </li>
+                <li class="menu-item menu-item--collapsed menu-item--active-trail">
+        <button class="reset t-t-uppercase w-100 t-c-blue-dark pseudo-after f-icon overflow-hidden" data-url="/" id="main-menu-tickets-passes" aria-controls="submenu-tickets-passes" tabindex="-1" aria-expanded="false">Tickets &amp; Passes</button>
+      </li>
+                <li class="menu-item menu-item--collapsed">
+        <button class="reset t-t-uppercase w-100 t-c-blue-dark pseudo-after f-icon overflow-hidden" data-url="/" id="main-menu-winter" aria-controls="submenu-winter" tabindex="-1" aria-expanded="false">Winter</button>
+      </li>
+                <li class="menu-item menu-item--collapsed">
+        <button class="reset t-t-uppercase w-100 t-c-blue-dark pseudo-after f-icon overflow-hidden" data-url="/" id="main-menu-summer" aria-controls="submenu-summer" tabindex="-1" aria-expanded="false">Summer</button>
+      </li>
+                <li class="menu-item menu-item--collapsed">
+        <button class="reset t-t-uppercase w-100 t-c-blue-dark pseudo-after f-icon overflow-hidden" data-url="/" id="main-menu-groups" aria-controls="submenu-groups" tabindex="-1" aria-expanded="false">Groups</button>
+      </li>
+                <li class="menu-item menu-item--collapsed">
+        <button class="reset t-t-uppercase w-100 t-c-blue-dark pseudo-after f-icon overflow-hidden" data-url="/" id="main-menu-explore" aria-controls="submenu-explore" tabindex="-1" aria-expanded="false">About Us</button>
+      </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+            <div class="hide-large t-micetype t-t-uppercase lh-3 m-t-2">
+                <nav role="navigation" aria-labelledby="block-utility-menu-mobile-menu" id="block-utility-menu-mobile" class="block block-menu navigation menu--utility">
+            
+  <h2 class="visually-hidden" id="block-utility-menu-mobile-menu">Utility Menu - Mobile</h2>
+  
+
+        
+              <ul class="transition-ui reset d-flex ai-center jc-center t-t-uppercase menu">
+                    <li class="menu-item">
+        <a href="/about-us/employment" class="d-block" data-drupal-link-system-path="node/6">Employment</a>
+              </li>
+                <li class="menu-item">
+        <a href="/the-mountain/hours-of-operation" class="d-block" title="Mt Seymour Apparel" data-drupal-link-system-path="node/14">Hours of Operation</a>
+              </li>
+                <li class="menu-item">
+        <a href="/the-mountain/getting-here" class="d-block" data-drupal-link-system-path="node/16">Getting Here</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://mtseymour.ca/tickets-passes/season-pass-reservations" class="d-block">Season Pass Reservations</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://mtseymour.secure-cdn.na2.accessoticketing.com/profile-login/signin" target="_blank" class="d-block">Guest Login</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</header>
+
+
+
+
+<a href="/the-mountain/mountain-safety" class="hide-tablet-portrait z-index-20 t-micetype f-w-medium bg-primary d-flex ai-center jc-center p-h-2 t-t-uppercase t-align-center mountain-safety">
+        Mountain Safety
+</a>
+
+<div id="block-alert-bar" class="pos-absolute transition-ui w-100 top-header bg-secondary z-index-10  block block-config-pages block-config-pages-block">
+  
+    
+      
+  <div class="config_pages config_pages--type--alert-bar config_pages--view-mode--full config_pages--alert-bar--full container bg-blue-light">
+
+    <div class="grid-area-main d-flex ai-center jc-space-between p-v-1 rte">
+
+            
+
+
+
+
+    
+        
+                        
+            <div class="clearfix text-formatted field field--name-field-copy field--type-text-long field--label-hidden field__item"
+                        >
+
+            
+                                    <p>Early Bird Full Season Passes are 95% sold, don't wait too long! <a class="f-icon button-arrow" href="/tickets-passes/full-season-passes" data-entity-type="node" data-entity-uuid="6f3a90aa-4605-4c3f-90bb-8bca91822dfd" data-entity-substitution="canonical"><strong>BUY NOW</strong></a></p>
+
+                
+            
+            </div>
+
+        
+    
+
+
+        <button type="button" class="reset f-icon button-icon-right close" aria-controls="block-alert-bar">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+  </div>
+
+
+
+<div class="transition-ui pos-absolute top-header h-100-header menu-padding z-index-20 w-100 bg-gradient-blue-purple overflow-hidden submenus">
+    <div class="menu-width pos-relative">
+
+        <button tabindex="-1" aria-hidden="true" class="reset hide-large cover h-100vh f-icon back">
+            <span class="visually-hidden">
+                Back
+            </span>
+        </button>
+
+        
+            <div id="submenu-explore" class="transition-ui hidden submenu" aria-hidden="true" aria-labelledby="main-menu-explore">
+                <nav role="navigation" aria-labelledby="block-submenu-explore-menu" id="block-submenu-explore" class="block block-menu navigation menu--main">
+      
+  <h2 class="menu-fontsize f-w-bold hide-large m-0" id="block-submenu-explore-menu">Explore</h2>
+  
+
+        
+              <ul class="reset transition-ui lh-3 menu">
+                    <li class="menu-item">
+          <a href="/about-us/our-story" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/4">Our Story</a>
+                </li>
+                <li class="menu-item menu-item--collapsed">
+          <a href="/about-us/employment" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/6">Employment</a>
+                </li>
+                <li class="menu-item">
+          <a href="/about-us/staff-housing" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/327">Staff Housing</a>
+                </li>
+                <li class="menu-item">
+          <a href="/about-us/faqs" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/9">FAQ&#039;s</a>
+                </li>
+                <li class="menu-item">
+          <a href="/about-us/community" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/279">Community</a>
+                </li>
+                <li class="menu-item">
+          <a href="/about-us/territory-acknowledgment" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/169">Territory Acknowledgment</a>
+                </li>
+        </ul>
+  
+
+
+  </nav>
+
+            </div>
+
+        
+            <div id="submenu-the-mountain" class="transition-ui hidden submenu" aria-hidden="true" aria-labelledby="main-menu-the-mountain">
+                <nav role="navigation" aria-labelledby="block-submenu-the-mountain-menu" id="block-submenu-the-mountain" class="block block-menu navigation menu--main">
+      
+  <h2 class="menu-fontsize f-w-bold hide-large m-0" id="block-submenu-the-mountain-menu">The Mountain</h2>
+  
+
+        
+              <ul class="reset transition-ui lh-3 menu">
+                    <li class="menu-item">
+          <a href="/masterplan" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/417">Ski Resort Development Plan</a>
+                </li>
+                <li class="menu-item">
+          <a href="/the-mountain/todays-conditions-hours" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/12">Today&#039;s Conditions &amp; Hours</a>
+                </li>
+                <li class="menu-item">
+          <a href="/the-mountain/weather-forecast" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/13">Weather Forecast</a>
+                </li>
+                <li class="menu-item">
+          <a href="/the-mountain/hours-of-operation" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/14">Hours of Operation</a>
+                </li>
+                <li class="menu-item menu-item--collapsed">
+          <a href="/the-mountain/getting-here" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/16">Getting Here</a>
+                </li>
+                <li class="menu-item">
+          <a href="/the-mountain/trail-map" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/223">Trail Map</a>
+                </li>
+                <li class="menu-item">
+          <a href="https://skyview.360pros.net/Mt-Seymour/" target="_blank" class="d-block t-c-white f-w-medium" tabindex="-1">Virtual Tour</a>
+                </li>
+                <li class="menu-item">
+          <a href="/the-mountain/mountain-safety" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/18">Mountain Safety</a>
+                </li>
+                <li class="menu-item">
+          <a href="/the-mountain/food-beverage-outlets" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/19">Food &amp; Beverage Outlets</a>
+                </li>
+                <li class="menu-item">
+          <a href="/the-mountain/hiking-backcountry" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/33">Hiking &amp; Backcountry</a>
+                </li>
+                <li class="menu-item">
+          <a href="/the-mountain/the-hut-retail-store" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/387">The Hut Retail Store</a>
+                </li>
+        </ul>
+  
+
+
+  </nav>
+
+            </div>
+
+        
+            <div id="submenu-winter" class="transition-ui hidden submenu" aria-hidden="true" aria-labelledby="main-menu-winter">
+                <nav role="navigation" aria-labelledby="block-submenu-winter-menu" id="block-submenu-winter" class="block block-menu navigation menu--main">
+      
+  <h2 class="menu-fontsize f-w-bold hide-large m-0" id="block-submenu-winter-menu">Winter</h2>
+  
+
+        
+              <ul class="reset transition-ui lh-3 menu">
+                    <li class="menu-item">
+          <a href="/winter/ski-ride" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/20">Ski &amp; Ride</a>
+                </li>
+                <li class="menu-item menu-item--collapsed">
+          <a href="/winter/lessons-camps" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/21">Lessons &amp; Camps</a>
+                </li>
+                <li class="menu-item">
+          <a href="/winter/rental-equipment" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/22">Rental Equipment</a>
+                </li>
+                <li class="menu-item">
+          <a href="/winter/snowshoe" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/23">Snowshoe</a>
+                </li>
+                <li class="menu-item">
+          <a href="/winter/tubing-tobogganing" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/25">Tubing &amp; Tobogganing</a>
+                </li>
+                <li class="menu-item">
+          <a href="/winter/terrain-parks" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/17">Terrain Parks</a>
+                </li>
+                <li class="menu-item">
+          <a href="/winter/events" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/11">Events</a>
+                </li>
+                <li class="menu-item">
+          <a href="/winter/equipment-servicing-repair" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/26">Equipment Servicing &amp; Repair</a>
+                </li>
+        </ul>
+  
+
+
+  </nav>
+
+            </div>
+
+        
+            <div id="submenu-tickets-passes" class="transition-ui hidden submenu" aria-hidden="true" aria-labelledby="main-menu-tickets-passes">
+                <nav role="navigation" aria-labelledby="block-submenu-tickets-passes-menu" id="block-submenu-tickets-passes" class="block block-menu navigation menu--main">
+      
+  <h2 class="menu-fontsize f-w-bold hide-large m-0" id="block-submenu-tickets-passes-menu">Tickets &amp; Passes</h2>
+  
+
+        
+              <ul class="reset transition-ui lh-3 menu">
+                    <li class="menu-item">
+          <a href="/winter/ski-ride" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/20">Lift Ticket &amp; Rental Equipment</a>
+                </li>
+                <li class="menu-item menu-item--collapsed">
+          <a href="/tickets-passes/202627-season-pass-sale" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/366">2026/27 Season Pass Sale</a>
+                </li>
+                <li class="menu-item menu-item--collapsed">
+          <a href="/tickets-passes/season-pass-reservations" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/171">Season Pass Reservations</a>
+                </li>
+                <li class="menu-item">
+          <a href="/santa" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/280">Santa at Seymour</a>
+                </li>
+                <li class="menu-item menu-item--active-trail">
+          <a href="/tickets-passes/3ski-passes" class="d-block t-c-white f-w-medium is-active" tabindex="-1" data-drupal-link-system-path="node/31" aria-current="page">3Ski Passes</a>
+                </li>
+                <li class="menu-item menu-item--collapsed">
+          <a href="/winter/snowshoe" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/23">Snowshoe</a>
+                </li>
+                <li class="menu-item">
+          <a href="/winter/tubing-tobogganing" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/25">Tubing &amp; Tobogganing</a>
+                </li>
+                <li class="menu-item">
+          <a href="/the-mountain/rfid-reloadable-lift-tickets" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/176">RFID Reloadable Lift Tickets</a>
+                </li>
+                <li class="menu-item">
+          <a href="https://mtseymour.ca/?keyword=gift%20cards" class="d-block t-c-white f-w-medium" tabindex="-1">Gift Cards</a>
+                </li>
+                <li class="menu-item">
+          <a href="/tickets-passes/corporate-season-passes" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/452">Corporate Season Passes</a>
+                </li>
+        </ul>
+  
+
+
+  </nav>
+
+            </div>
+
+        
+            <div id="submenu-summer" class="transition-ui hidden submenu" aria-hidden="true" aria-labelledby="main-menu-summer">
+                <nav role="navigation" aria-labelledby="block-submenu-summer-menu" id="block-submenu-summer" class="block block-menu navigation menu--main">
+      
+  <h2 class="menu-fontsize f-w-bold hide-large m-0" id="block-submenu-summer-menu">Summer</h2>
+  
+
+        
+              <ul class="reset transition-ui lh-3 menu">
+                    <li class="menu-item">
+          <a href="/summer/2026-summer-camps" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/34">2026 Summer Camps</a>
+                </li>
+                <li class="menu-item">
+          <a href="/summer/goldie-lake-interpretive-trail" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/35">Goldie Lake Interpretive Trail</a>
+                </li>
+                <li class="menu-item">
+          <a href="/summer/fun-guide-an-educational-look-at-edible-fungi" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/332">Fun-Guide: An Educational Look at Edible Fungi</a>
+                </li>
+                <li class="menu-item">
+          <a href="/groups/summer-group-activities" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/296">Group Activities</a>
+                </li>
+                <li class="menu-item">
+          <a href="/the-mountain/hiking-backcountry" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/33">Hiking &amp; Backcountry</a>
+                </li>
+        </ul>
+  
+
+
+  </nav>
+
+            </div>
+
+        
+            <div id="submenu-groups" class="transition-ui hidden submenu" aria-hidden="true" aria-labelledby="main-menu-groups">
+                <nav role="navigation" aria-labelledby="block-submenu-groups-menu" id="block-submenu-groups" class="block block-menu navigation menu--main">
+      
+  <h2 class="menu-fontsize f-w-bold hide-large m-0" id="block-submenu-groups-menu">Groups</h2>
+  
+
+        
+              <ul class="reset transition-ui lh-3 menu">
+                    <li class="menu-item menu-item--collapsed">
+          <a href="/groups/schools" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/39">Schools</a>
+                </li>
+                <li class="menu-item">
+          <a href="/groups/team-building" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/433">Team Building</a>
+                </li>
+                <li class="menu-item">
+          <a href="/groups/summer-group-activities" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/296">Summer Group Activities</a>
+                </li>
+                <li class="menu-item">
+          <a href="/groups/weddings" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/294">Weddings</a>
+                </li>
+                <li class="menu-item">
+          <a href="/groups/skiing-snowboarding" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/438">Skiing &amp; Snowboarding</a>
+                </li>
+                <li class="menu-item">
+          <a href="/groups/snowshoeing" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/439">Snowshoeing</a>
+                </li>
+                <li class="menu-item">
+          <a href="/groups/tobogganing-tubing" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/440">Tobogganing &amp; Tubing</a>
+                </li>
+                <li class="menu-item">
+          <a href="/groups/group-spaces" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/40">Group Spaces</a>
+                </li>
+                <li class="menu-item">
+          <a href="/groups/santa-at-seymour-takeover" class="d-block t-c-white f-w-medium" tabindex="-1" data-drupal-link-system-path="node/449">Santa at Seymour Takeover</a>
+                </li>
+        </ul>
+  
+
+
+  </nav>
+
+            </div>
+
+        
+    </div>
+</div>
+
+<div id="conditions-overlay" aria-hidden="true" aria-labelledby="conditions-toggle" class="transition-ui z-index-20 container top-header bg-background pos-absolute w-100 p-v-2 conditions-overlay block block-config-pages block-config-pages-block">
+  
+    
+      
+  <div class="fade-in rte grid-area-main">
+
+    <ul class="reset d-flex flex-wrap-wrap jc-center t-align-center circle-data">
+        <li class="m-0">
+            <div class="gradient border-radius-full t-c-green f-size-30 lh-1 value">
+    <div class="pos-relative d-flex flex-direction-column jc-center ai-center border-radius-full bg-white inner">
+
+        <div class="f-size-30 f-w-xbold value">
+            
+                            
+<i class="pos-relative t-c-green weather-icon wi wi-fog"></i>
+                    </div>
+
+        
+    </div>
+</div>
+
+<div class="t-micetype lh-3 t-t-uppercase f-w-medium label">
+    Fog
+</div>
+        </li>
+        <li class="m-0">
+            <div class="gradient border-radius-full t-c-green f-size-30 lh-1 value">
+    <div class="pos-relative d-flex flex-direction-column jc-center ai-center border-radius-full bg-white inner">
+
+        <div class="f-size-30 f-w-xbold value">
+            4°C
+                    </div>
+
+        
+    </div>
+</div>
+
+<div class="t-micetype lh-3 t-t-uppercase f-w-medium label">
+    Temperature
+</div>
+        </li>
+        <li class="m-0">
+            <div class="gradient border-radius-full t-c-green f-size-30 lh-1 value">
+    <div class="pos-relative d-flex flex-direction-column jc-center ai-center border-radius-full bg-white inner">
+
+        <div class="f-size-30 f-w-xbold value">
+            0
+                    </div>
+
+                    <div class="pos-absolute t-micetype t-c-text f-w-medium unit">
+                cm
+            </div>
+        
+    </div>
+</div>
+
+<div class="t-micetype lh-3 t-t-uppercase f-w-medium label">
+    24hr Snowfall
+</div>
+        </li>
+        <!--<li class="m-0">
+            <div class="gradient border-radius-full t-c-green f-size-30 lh-1 value">
+    <div class="pos-relative d-flex flex-direction-column jc-center ai-center border-radius-full bg-white inner">
+
+        <div class="f-size-30 f-w-xbold value">
+            
+                    </div>
+
+        
+    </div>
+</div>
+
+<div class="t-micetype lh-3 t-t-uppercase f-w-medium label">
+    Runs Open
+</div>
+        </li>-->
+    </ul>
+
+
+    <div class="links w-max m-auto t-align-right">
+        <ul class="reset">
+            <li class="m-0">
+                <a href="/the-mountain/todays-conditions-hours" class="f-icon button-arrow" tabindex="-1">Today's
+                    Conditions & Hours</a>
+            </li>
+            <li class="m-0">
+                <a href="/the-mountain/weather-forecast" class="f-icon button-arrow" tabindex="-1">Weather Forecast</a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+
+  </div>
+
+
+    <main id="main-content" role="main" class="transition-ui  row-padding p-t-0 menu-offset main-content">
+
+        
+
+                    
+    
+
+    <div class="region region-content">
+        <div id="block-origin-content" class="block block-system block-system-main-block">
+  
+    
+      
+    
+
+
+
+    
+
+
+<article id="node-31"  data-history-node-id="31" class="node node--type-page node--view-mode-full has-hero-image">
+
+    
+
+            
+
+<div class="container pseudo-before p-b-0 hero with-image hide-credit  ">
+
+    <div class="grid-area-main inner-grid">
+
+        
+            
+                <div class="row-padding-small p-b-0 grid-inner-full copy">
+                    <div data-drupal-messages-fallback class="hidden"></div>
+
+                                            <div class="t-large section_title m-b-1">Tickets &amp; Passes</div>
+                                        <h1 class="dash">3Ski Passes</h1>
+                        
+
+    
+
+
+    
+        
+                        
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden rte field__item"
+                        >
+
+            
+                                    <p class="t-large">Ski or snowboard three times with or without rentals &amp; save up to 44%*. No reservations required and free shuttle included from both <a href="https://www.google.com/maps/search/49.260918,+-123.033950?entry=tts&amp;g_ep=EgoyMDI1MTAyNy4wIPu8ASoASAFQAw%3D%3D&amp;skid=f327b4ac-d14c-4484-a2a5-99ef81faf309">East</a> &amp; <a href="https://www.google.com/maps/search/49.318215,+-122.969763?entry=tts&amp;g_ep=EgoyMDI1MTAyNy4wIPu8ASoASAFQAw%3D%3D&amp;skid=2d564bdb-7027-4f91-94cf-27858d4ee4ae">North Vancouver</a>! Limited daily quantities. Once sold out, they will be back on sale the next day.</p>
+<p class="text-align-center"><strong>Valid Sunday 4:30pm - Friday Close (exc. holidays)</strong></p>
+<p class="text-align-center t-micetype">Blackout dates apply. Early &amp; late season the resort may not be open past 4pm.</p>
+
+                
+            
+            </div>
+
+        
+    
+
+                </div>
+
+                <div class="grid-inner-full image container-offset media-square">
+                        
+
+
+
+
+    
+        
+                        
+            <div class="field field--name-field-main-image field--type-entity-reference field--label-hidden field__item"
+                        >
+
+            
+                                    
+    
+
+
+
+
+<article class="media media--type-image media--view-mode-default">
+    
+
+    
+        
+            
+                
+
+
+
+
+    
+        
+                        
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item"
+                        >
+
+            
+                                        <img loading="lazy" width="3213" height="1807" data-x="30.999066293184" data-y="31.986718317654" data-parent-fit="cover" data-aspectratio="1.7780852241284" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Skier in a purple jacket jumps through snowy forest." class="lazyload" data-src="/sites/default/files/styles/scale_1440/public/2025-11/Jan%2018_Pow%20%289%20of%2011%29.jpg?itok=8W_h5jHK" data-srcset="/sites/default/files/styles/scale_320/public/2025-11/Jan%2018_Pow%20%289%20of%2011%29.jpg?itok=rFYaxFnk 320w, /sites/default/files/styles/scale_480/public/2025-11/Jan%2018_Pow%20%289%20of%2011%29.jpg?itok=JJT1QpkX 480w, /sites/default/files/styles/scale_640/public/2025-11/Jan%2018_Pow%20%289%20of%2011%29.jpg?itok=AiWCqyR_ 640w, /sites/default/files/styles/scale_800/public/2025-11/Jan%2018_Pow%20%289%20of%2011%29.jpg?itok=DvT_otkn 800w, /sites/default/files/styles/scale_1024/public/2025-11/Jan%2018_Pow%20%289%20of%2011%29.jpg?itok=riaPLRHL 1024w, /sites/default/files/styles/scale_1280/public/2025-11/Jan%2018_Pow%20%289%20of%2011%29.jpg?itok=Lawpft3n 1280w, /sites/default/files/styles/scale_1440/public/2025-11/Jan%2018_Pow%20%289%20of%2011%29.jpg?itok=8W_h5jHK 1440w, /sites/default/files/styles/scale_1920/public/2025-11/Jan%2018_Pow%20%289%20of%2011%29.jpg?itok=2bfwfTCl 1920w" data-sizes="auto" />
+
+
+
+                
+            
+            </div>
+
+        
+    
+
+
+            
+        
+    
+</article>
+
+                
+            
+            </div>
+
+        
+    
+
+                </div>
+
+            
+        
+    </div>
+</div>
+    
+
+    
+
+    
+    
+            <div class="node-content pos-relative
+                row                            ">
+
+            
+                
+
+    
+
+
+    
+                            
+        <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden row field__items">
+
+            
+                
+                                        
+                                                                                    
+                                            <div class="field__item single-column-copy row">
+                                
+
+    
+
+
+
+    <div class="paragraph paragraph--type--single-column-copy paragraph--view-mode--default width--wide fade-in container" id="paragraph-209">
+
+                    
+<div  class="inner-grid">
+    
+<div  class="content-container">
+        
+
+    
+
+
+    
+        
+                        
+            <div class="clearfix text-formatted field field--name-field-copy-first-column field--type-text-long field--label-hidden rte field__item"
+                        >
+
+            
+                                    <p>&nbsp;</p>
+<h4 class="text-align-center"><strong>3Ski Passes GO On sale november 3</strong></h4>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><strong>26/27 3Ski Passes</strong></h4>
+<p class="t-micetype">*Savings based on the max price lift ticket for the time period.</p>
+</td>
+<td>
+<p class="text-align-center"><strong>Adult/Senior (19+)</strong></p>
+</td>
+<td>
+<p class="text-align-center"><strong>Youth (13-18)</strong></p>
+</td>
+<td>
+<p class="text-align-center"><strong>Child (5-12)</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>3Ski&nbsp;</strong></p>
+<p>Valid Sunday 4:30pm - Friday Close (exc. holidays)</p>
+</td>
+<td>$139</td>
+<td>$119</td>
+<td>$79</td>
+</tr>
+<tr>
+<td><strong>Rental Package Add On</strong></td>
+<td>$120</td>
+<td>$120</td>
+<td>$90</td>
+</tr>
+<tr>
+<td><strong>Helmet Only Add On</strong></td>
+<td>$20</td>
+<td>$20</td>
+<td>$20</td>
+</tr>
+</tbody>
+</table>
+<p class="t-micetype">All Pricing subject to applicable taxes and fees.</p>
+
+                
+            
+            </div>
+
+        
+    
+
+  </div>
+  </div>
+        
+    </div>
+
+                        </div>
+                    
+                
+                                        
+                                                                                    
+                                            <div class="field__item single-column-copy row">
+                                
+
+    
+
+    
+
+
+    <div class="paragraph paragraph--type--single-column-copy paragraph--view-mode--default width--wide accordion fade-in container" id="paragraph-210">
+
+                    
+<div  class="inner-grid">
+    
+<div  class="content-container">
+        
+
+    
+
+
+    
+        
+                        
+            <div class="clearfix text-formatted field field--name-field-copy-first-column field--type-text-long field--label-hidden rte field__item"
+                        >
+
+            
+                                    <h3>3Ski Terms &amp; Conditions</h3>
+<ul>
+<li>Only <strong>ONE</strong>&nbsp;3Ski product per person, per season allowed</li>
+<li><span>Valid from when Mt Seymour's downhill area is open.</span></li>
+<li class="ck-list-marker-bold"><strong>Blackout dates: Dec 19, 2026-Jan 3, 2027 &amp; Feb 13-15, 2027</strong></li>
+<li>Operating hours may be reduced at off-peak times throughout the season, typically a later opening on weekdays of 1.30pm, and an early closure on weekends at 4pm.</li>
+<li><span>New pass holders are required to pay a $5 new RFID card fee. </span>Reload an existing eligible RFID card to save the $5 new card fee.</li>
+<li>All 3 visits are loaded onto the one RFID card. Once you have your card, head straight to the lifts. No reservations required!</li>
+<li>All uses must be redeemed by the end of&nbsp;the 2026/27 season. Uses not redeemed will be forfeited.</li>
+<li>Non-refundable, non-transferable and not valid for use during advertised blackout dates. <span>No rain checks - we do not offer refunds in the event of rain, snow, or poor visibility. Guests are responsible for checking on weather conditions before deciding to purchase or redeem a visit.</span></li>
+<li>Not valid for Season Pass holder benefits including Reciprocal Mountain deals.</li>
+<li>Rental equipment add-on includes skis, boots &amp; poles OR snowboard, bindings &amp; boots, plus a helmet</li>
+<li>Shuttle is included for all 3 uses of the pass</li>
+<li>If a 3Ski Pass is lost or broken, a $5 replacement fee will be charged. Mt Seymour reserves the right to deny pass reprints.</li>
+<li>3Ski pass holders are eligible for 20% off lift tickets, day or night, after their 3 visits are used up.</li>
+</ul>
+
+                
+            
+            </div>
+
+        
+    
+
+  </div>
+  </div>
+        
+    </div>
+
+                        </div>
+                    
+                
+                                        
+                                                                                    
+                                            <div class="field__item single-column-copy row">
+                                
+
+    
+
+    
+
+
+    <div class="paragraph paragraph--type--single-column-copy paragraph--view-mode--default width--narrow accordion fade-in container" id="paragraph-211">
+
+                    
+<div  class="inner-grid">
+    
+<div  class="content-container">
+        
+
+    
+
+
+    
+        
+                                                    
+            <h2 class="field field--name-field-heading field--type-string field--label-hidden dash field__item"
+                        >
+
+            
+                                    FAQ&#039;s
+                
+            
+            </h2>
+
+        
+    
+    
+
+    
+
+
+    
+        
+                        
+            <div class="clearfix text-formatted field field--name-field-copy-first-column field--type-text-long field--label-hidden rte field__item"
+                        >
+
+            
+                                    <h3>What are the blackout dates?</h3>
+<ul>
+<li>Holiday Period: Dec 19, 2026-Jan 3, 2027</li>
+<li>Family Day long weekend: Feb 13-15, 2027</li>
+<li>Operating hours may be reduced at off-peak times throughout the season, typically a later opening on weekdays of 1.30pm, and an early closure on weekends at 4pm.</li>
+</ul>
+<h3>What happens when I've used all 3 visits?</h3>
+<p>Used all three of your 3Ski lift tickets but want to come back for more? No problem!</p>
+<p>3Ski pass holders can reload their pass and receive 20% off on additional daily lift tickets, including weekends (subject to availability). Buy as many additional days as you like for the remainder of the 2026/27 Season! Call 604.986.2261 option 6, or visit the Season Pass &amp; Ticket Office on hill.</p>
+<h3>How many 3Ski passes can I purchase?</h3>
+<p>In order to share the fun, only ONE 3Ski pass can be purchased per person, per season.</p>
+<p>Need a buddy to ski/ride with you? Feeling generous? Good news... you can purchase as many 3Ski passes as you like as gifts for others (as long as your buddy hasn't already had a 3Ski pass this season).</p>
+<h3>What if I forget or lose my 3Ski pass?</h3>
+<p>Don't panic! If you arrive on-hill and realize your 3Ski pass missed the memo to attend, come and visit us at any of our Guest Service locations. If you have forgotten, lost or broken your pass, you will be required to pay a $5 + tax replacement card fee.</p>
+<h3>What if I am not able to use one or more of my visits?</h3>
+<p>As per the terms &amp; conditions of purchase, 3Ski products are non-refundable and non-transferable once purchased. You must use all 3 visits by the end of the season, as they expire once closed for the 2026/27 season (see our <a href="/the-mountain/hours-of-operation" data-entity-type="node" data-entity-uuid="5cf6dd3b-8167-4cef-9971-de68cf3b4269" data-entity-substitution="canonical">Hours of Operation</a> page&nbsp;for season dates).</p>
+<p>We understand that sometimes life happens! If there are extenuating circumstances that mean you absolutely cannot make use of your 3Ski, please complete our claims form <a href="https://live-seymour.pantheonsite.io/claims">HERE</a> and provide evidence of you claim to <a href="mailto:claims@mtseymour.ca">claims@mtseymour.ca</a> for individual consideration. Please note that we will not except claims that do not have extenuating circumstances behind them and evidence provided.</p>
+
+                
+            
+            </div>
+
+        
+    
+
+  </div>
+  </div>
+        
+    </div>
+
+                        </div>
+                    
+                
+                                        
+                                                                                    
+                                            <div class="field__item content-cards row pseudo-before pseudo-after bg-background gradient-above gradient-below">
+                                
+
+    
+
+
+
+    <div class="paragraph paragraph--type--content-cards paragraph--view-mode--default fade-in container" id="paragraph-310">
+
+                    
+<div  class="grid-area-main">
+        
+
+    
+
+
+    
+                            
+        <div class="field field--name-field-content-references field--type-entity-reference field--label-hidden inner-grid three-col-grid delay-grid-3 field__items">
+
+            
+                
+                                        
+                                                                                    
+                                            <div class="field__item fade-in">
+                            
+    
+
+
+<article  data-history-node-id="16" class="node node--type-page node--view-mode-card fade-in iso-item hide-credit media-portrait pseudo-before gradient-box">
+
+    
+
+    <div class="bg-white pos-relative z-index-10 inner">
+    <div class="pos-relative z-index-10 content-wrap">
+
+                    <a href="/the-mountain/getting-here" class="image" tabindex="-1" aria-hidden="true">
+                    
+
+
+
+
+    
+        
+                        
+            <div class="field field--name-field-main-image field--type-entity-reference field--label-hidden field__item"
+                        >
+
+            
+                                    
+    
+
+
+
+
+<article class="media media--type-image media--view-mode-default">
+    
+
+    
+        
+            
+                
+
+
+
+
+    
+        
+                        
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item"
+                        >
+
+            
+                                        <img loading="lazy" width="5052" height="2842" data-x="28.008709422011" data-y="49.014778325123" data-parent-fit="cover" data-aspectratio="1.7776213933849" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="shuttle bus in the snow" class="lazyload" data-src="/sites/default/files/styles/scale_1440/public/2025-10/Yellow%20Shuttle%20Bus%20%281%20of%201%29.jpeg?itok=8NvmP_RU" data-srcset="/sites/default/files/styles/scale_320/public/2025-10/Yellow%20Shuttle%20Bus%20%281%20of%201%29.jpeg?itok=EI4ngloI 320w, /sites/default/files/styles/scale_480/public/2025-10/Yellow%20Shuttle%20Bus%20%281%20of%201%29.jpeg?itok=9J2hOv7q 480w, /sites/default/files/styles/scale_640/public/2025-10/Yellow%20Shuttle%20Bus%20%281%20of%201%29.jpeg?itok=HVHgBH-q 640w, /sites/default/files/styles/scale_800/public/2025-10/Yellow%20Shuttle%20Bus%20%281%20of%201%29.jpeg?itok=krbY9NMC 800w, /sites/default/files/styles/scale_1024/public/2025-10/Yellow%20Shuttle%20Bus%20%281%20of%201%29.jpeg?itok=EMEWVYMo 1024w, /sites/default/files/styles/scale_1280/public/2025-10/Yellow%20Shuttle%20Bus%20%281%20of%201%29.jpeg?itok=LgaALNG- 1280w, /sites/default/files/styles/scale_1440/public/2025-10/Yellow%20Shuttle%20Bus%20%281%20of%201%29.jpeg?itok=8NvmP_RU 1440w, /sites/default/files/styles/scale_1920/public/2025-10/Yellow%20Shuttle%20Bus%20%281%20of%201%29.jpeg?itok=OBhVk53k 1920w" data-sizes="auto" />
+
+
+
+                
+            
+            </div>
+
+        
+    
+
+
+            
+        
+    
+</article>
+
+                
+            
+            </div>
+
+        
+    
+
+            </a>
+        
+        <div class="pos-absolute bg-white copy">
+
+            <a href="/the-mountain/getting-here" class="f-icon button-arrow-long">
+                <h3 class="lh-small">
+                                        Getting Here
+                                    </h3>
+            </a>
+
+        </div>
+
+    </div>
+    </div>
+
+</article>
+
+
+                        </div>
+                    
+                
+                                        
+                                                                                    
+                                            <div class="field__item fade-in">
+                            
+    
+
+
+<article  data-history-node-id="366" class="node node--type-page node--view-mode-card fade-in iso-item hide-credit media-portrait pseudo-before gradient-box">
+
+    
+
+    <div class="bg-white pos-relative z-index-10 inner">
+    <div class="pos-relative z-index-10 content-wrap">
+
+                    <a href="/tickets-passes/202627-season-pass-sale" class="image" tabindex="-1" aria-hidden="true">
+                    
+
+
+
+
+    
+        
+                        
+            <div class="field field--name-field-main-image field--type-entity-reference field--label-hidden field__item"
+                        >
+
+            
+                                    
+    
+
+
+
+
+<article class="media media--type-image media--view-mode-default">
+    
+
+    
+        
+            
+                
+
+
+
+
+    
+        
+                        
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item"
+                        >
+
+            
+                                        <img loading="lazy" width="3961" height="2641" data-x="3.9888916940167" data-y="36.009087466869" data-parent-fit="cover" data-aspectratio="1.4998106777736" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Family on chairlift" class="lazyload" data-src="/sites/default/files/styles/scale_1440/public/2022-08/Feb24_2019_%20%28105%20of%20105%29.jpg?itok=B7AOm3El" data-srcset="/sites/default/files/styles/scale_320/public/2022-08/Feb24_2019_%20%28105%20of%20105%29.jpg?itok=1hCL7jss 320w, /sites/default/files/styles/scale_480/public/2022-08/Feb24_2019_%20%28105%20of%20105%29.jpg?itok=v5b7xLmf 480w, /sites/default/files/styles/scale_640/public/2022-08/Feb24_2019_%20%28105%20of%20105%29.jpg?itok=stagI_er 640w, /sites/default/files/styles/scale_800/public/2022-08/Feb24_2019_%20%28105%20of%20105%29.jpg?itok=LpWbDnF4 800w, /sites/default/files/styles/scale_1024/public/2022-08/Feb24_2019_%20%28105%20of%20105%29.jpg?itok=r-KsbUi- 1024w, /sites/default/files/styles/scale_1280/public/2022-08/Feb24_2019_%20%28105%20of%20105%29.jpg?itok=ujw9sqJa 1280w, /sites/default/files/styles/scale_1440/public/2022-08/Feb24_2019_%20%28105%20of%20105%29.jpg?itok=B7AOm3El 1440w, /sites/default/files/styles/scale_1920/public/2022-08/Feb24_2019_%20%28105%20of%20105%29.jpg?itok=t0YnyBnO 1920w" data-sizes="auto" />
+
+
+
+                
+            
+            </div>
+
+        
+    
+
+
+            
+        
+    
+</article>
+
+                
+            
+            </div>
+
+        
+    
+
+            </a>
+        
+        <div class="pos-absolute bg-white copy">
+
+            <a href="/tickets-passes/202627-season-pass-sale" class="f-icon button-arrow-long">
+                <h3 class="lh-small">
+                                        Season Passes
+                                    </h3>
+            </a>
+
+        </div>
+
+    </div>
+    </div>
+
+</article>
+
+
+                        </div>
+                    
+                
+                                        
+                                                                                    
+                                            <div class="field__item fade-in">
+                            
+    
+
+
+<article  data-history-node-id="280" class="node node--type-page node--view-mode-card fade-in iso-item hide-credit media-portrait pseudo-before gradient-box">
+
+    
+
+    <div class="bg-white pos-relative z-index-10 inner">
+    <div class="pos-relative z-index-10 content-wrap">
+
+                    <a href="/santa" class="image" tabindex="-1" aria-hidden="true">
+                    
+
+
+
+
+    
+        
+                        
+            <div class="field field--name-field-main-image field--type-entity-reference field--label-hidden field__item"
+                        >
+
+            
+                                    
+    
+
+
+
+
+<article class="media media--type-image media--view-mode-default">
+    
+
+    
+        
+            
+                
+
+
+
+
+    
+        
+                        
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item"
+                        >
+
+            
+                                        <img loading="lazy" width="3840" height="2160" data-x="62.005208333333" data-y="21.990740740741" data-parent-fit="cover" data-aspectratio="1.7777777777778" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Santa reading a letter beside wrapped gifts and a decorated Christmas tree." class="lazyload" data-src="/sites/default/files/styles/scale_1440/public/2026-08/Santa%20%285%20of%2016%29.jpg?itok=wur-MKBR" data-srcset="/sites/default/files/styles/scale_320/public/2026-08/Santa%20%285%20of%2016%29.jpg?itok=x5od_gPu 320w, /sites/default/files/styles/scale_480/public/2026-08/Santa%20%285%20of%2016%29.jpg?itok=6bOxoBFV 480w, /sites/default/files/styles/scale_640/public/2026-08/Santa%20%285%20of%2016%29.jpg?itok=41rDh2Mh 640w, /sites/default/files/styles/scale_800/public/2026-08/Santa%20%285%20of%2016%29.jpg?itok=57q4gk4N 800w, /sites/default/files/styles/scale_1024/public/2026-08/Santa%20%285%20of%2016%29.jpg?itok=kPfMjk-2 1024w, /sites/default/files/styles/scale_1280/public/2026-08/Santa%20%285%20of%2016%29.jpg?itok=M7ZcYlcX 1280w, /sites/default/files/styles/scale_1440/public/2026-08/Santa%20%285%20of%2016%29.jpg?itok=wur-MKBR 1440w, /sites/default/files/styles/scale_1920/public/2026-08/Santa%20%285%20of%2016%29.jpg?itok=Eoppuvdt 1920w" data-sizes="auto" />
+
+
+
+                
+            
+            </div>
+
+        
+    
+
+
+            
+        
+    
+</article>
+
+                
+            
+            </div>
+
+        
+    
+
+            </a>
+        
+        <div class="pos-absolute bg-white copy">
+
+            <a href="/santa" class="f-icon button-arrow-long">
+                <h3 class="lh-small">
+                                        Santa at Seymour
+                                    </h3>
+            </a>
+
+        </div>
+
+    </div>
+    </div>
+
+</article>
+
+
+                        </div>
+                    
+                
+            
+        </div>
+
+    
+
+  </div>
+        
+    </div>
+
+                        </div>
+                    
+                
+                                        
+                                                                                    
+                                            <div class="field__item single-column-copy row">
+                                
+
+    
+
+
+
+    <div class="paragraph paragraph--type--single-column-copy paragraph--view-mode--default width--narrow fade-in container" id="paragraph-434">
+
+                    
+<div  class="inner-grid">
+    
+<div  class="content-container">
+        
+
+    
+
+
+    
+        
+                        
+            <div class="clearfix text-formatted field field--name-field-copy-first-column field--type-text-long field--label-hidden rte field__item"
+                        >
+
+            
+                                    
+    
+
+
+
+
+<article class="media media--type-inline-image media--view-mode-inline" data-align="center">
+    
+
+    
+        
+                            <a href="/sites/default/files/2022-08/Exclusion%20of%20Liability%202020%20-%20BC.pdf" target="_blank">
+            
+                
+
+
+
+
+    
+        
+                        
+            <div class="field field--name-field-media-image-1 field--type-image field--label-hidden field__item">
+
+            
+                                      <img loading="lazy" src="/sites/default/files/2022-08/Exclusion%20of%20Liability%202020%20-%20BC%20image%20file.jpg" width="1350" height="1800" alt="Exclusion of Liability - Click to enlarge">
+
+
+                
+            
+            </div>
+
+        
+    
+
+
+                            </a>
+            
+        
+    
+</article>
+
+                
+            
+            </div>
+
+        
+    
+
+  </div>
+  </div>
+        
+    </div>
+
+                        </div>
+                    
+                
+            
+        </div>
+
+    
+
+
+        </div>
+    
+
+            
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</article>
+
+
+  </div>
+
+    </div>
+
+
+
+        
+    </main>
+
+    
+<footer class="transition-ui container bg-blue-dark t-c-white row-padding menu-offset site-footer" role="contentinfo">
+    <div class="inner-grid">
+
+        <div class="d-grid grid-inner-full footer-grid">
+
+            <div id="block-footer-newsletter" class="m-b-3 block block-config-pages block-config-pages-block">
+  
+    
+      <div class="config_pages config_pages--type--footer config_pages--view-mode--newsletter config_pages--footer--newsletter">
+      
+
+
+
+
+    
+        
+                        
+            <div class="field field--name-field-newsletter field--type-entity-reference-revisions field--label-hidden field__item"
+                        >
+
+            
+                                        
+
+    
+
+
+
+    <div class="paragraph paragraph--type--single-column-copy paragraph--view-mode--simple fade-in container" id="paragraph-5">
+
+                        
+
+    
+
+
+    
+        
+                                                    
+            <h2 class="field field--name-field-heading field--type-string field--label-hidden dash field__item"
+                        >
+
+            
+                                    Stay up-to-date
+                
+            
+            </h2>
+
+        
+    
+    
+
+    
+
+
+    
+        
+                        
+            <div class="clearfix text-formatted field field--name-field-copy-first-column field--type-text-long field--label-hidden rte field__item"
+                        >
+
+            
+                                    <p>Get Mt Seymour's weekly Seymour Rundown Newsletter with news, events, and great deals.</p>
+<p><a class="f-icon button-arrow" href="https://content-us-1.content-cms.com/api/8d64a707-b539-433d-9b29-0d162b268898/forms/500110551669616640">Sign Me Up</a></p>
+
+                
+            
+            </div>
+
+        
+    
+
+        
+    </div>
+
+                
+            
+            </div>
+
+        
+    
+
+</div>
+
+  </div>
+
+
+            <div class="menus">
+                <a href="/" title="Home" class="d-inline-block m-b-2 outline-offset logo">
+                    <img src="/themes/custom/origin/images/logo-white.svg" alt="Home" />
+                </a>
+                <nav role="navigation" aria-labelledby="block-origin-footer-menu" id="block-origin-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-origin-footer-menu">Footer menu</h2>
+  
+
+        
+              <ul class="menu reset t-t-uppercase f-size-14">
+                    <li class="menu-item menu-item--collapsed">
+        <a href="/contact-us" class="d-block p-v-05" data-drupal-link-system-path="node/41">Contact Us</a>
+              </li>
+                <li class="menu-item">
+        <a href="/terms-conditions" class="d-block p-v-05" data-drupal-link-system-path="node/42">Terms &amp; Conditions</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://mtseymour.ca/the-mountain/mountain-safety" class="d-block p-v-05">Mountain Safety</a>
+              </li>
+                <li class="menu-item">
+        <a href="/privacy-policy" class="d-block p-v-05" data-drupal-link-system-path="node/45">Privacy Policy</a>
+              </li>
+                <li class="menu-item">
+        <a href="/drone-policy" class="d-block p-v-05" data-drupal-link-system-path="node/46">Drone Policy</a>
+              </li>
+                <li class="menu-item">
+        <a href="/claims" class="d-block p-v-05" data-drupal-link-system-path="node/47">Claims</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://mtseymour.ca/contact-us/lost-found" class="d-block p-v-05">Lost &amp; Found</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/staff-portal" class="d-block p-v-05" data-drupal-link-system-path="node/302">Staff Portal</a>
+              </li>
+                <li class="menu-item">
+        <a href="/film-enquiries" class="d-block p-v-05" data-drupal-link-system-path="node/373">Film Enquiries</a>
+              </li>
+                <li class="menu-item">
+        <a href="/media-enquiries" class="d-block p-v-05" data-drupal-link-system-path="node/374">Media Enquiries</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+                <div class="m-t-3">
+                    <nav role="navigation" aria-labelledby="block-social-menu" id="block-social" class="block block-menu navigation menu--social">
+            
+  <h2 class="visually-hidden" id="block-social-menu">Social</h2>
+  
+
+        
+              <ul class="reset d-flex ai-center menu">
+                    <li class="menu-item">
+        <a href="https://www.facebook.com/MtSeymour" target="_blank" class="f-icon outline-offset">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+              </li>
+                <li class="menu-item">
+        <a href="https://twitter.com/Mt_Seymour" target="_blank" class="f-icon outline-offset">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.instagram.com/mtseymour/" target="_blank" class="f-icon outline-offset">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.tiktok.com/@mtseymour?lang=en" target="_blank" class="f-icon outline-offset">
+          <span class="visually-hidden">TikTok</span>
+        </a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+                </div>
+            </div>
+
+            <div id="block-footer-contact-information" class="f-size-16 m-t-2 block block-config-pages block-config-pages-block">
+  
+    
+      <div class="config_pages config_pages--type--footer config_pages--view-mode--contact-information config_pages--footer--contact-information">
+      
+
+
+
+
+    
+        
+                        
+            <div class="field field--name-field-contact-information field--type-entity-reference-revisions field--label-hidden field__item"
+                        >
+
+            
+                                        
+
+    
+
+
+
+    <div class="paragraph paragraph--type--single-column-copy paragraph--view-mode--simple fade-in container" id="paragraph-4">
+
+                        
+
+    
+
+
+    
+        
+                        
+            <div class="clearfix text-formatted field field--name-field-copy-first-column field--type-text-long field--label-hidden rte field__item"
+                        >
+
+            
+                                    <p>Guest Services: <a href="tel:6049862261">604-986-2261</a><br>On-Hill Emergency Line: <a href="tel:6046306528">604-630-6528</a><br>Email: <a href="mailto:info@mtseymour.ca">info@mtseymour.ca</a><br><a href="https://www.google.com/maps/place/Mt+Seymour+Resort/@49.3654235,-122.9505127,17z/data=!3m1!4b1!4m5!3m4!1s0x5485db8bc349ac9b:0x837bedfc524c790d!8m2!3d49.36542!4d-122.948324" target="_blank">1700 Mount Seymour Road, North Vancouver, BC Canada, V7G 1L3</a></p>
+<p class="t-micetype">Mt Seymour acknowledges that it operates on the unceded territory of the Coast Salish peoples, including the territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) Nations.</p>
+
+                
+            
+            </div>
+
+        
+    
+
+        
+    </div>
+
+                
+            
+            </div>
+
+        
+    
+
+</div>
+
+  </div>
+
+
+        </div>
+
+    </div>
+</footer>
+
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/31","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"object-fit":"object-fit\/ls.object-fit","parent-fit":"parent-fit\/ls.parent-fit"}},"placeholderSrc":"data:image\/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==","preferNative":false,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"field_group":{"html_element":{"mode":"default","context":"view","settings":{"classes":"content-container","show_empty_fields":false,"id":"","element":"div","show_label":false,"label_element":"h3","label_element_classes":"","attributes":"","effect":"none","speed":"fast"}}},"alert_bar":{"copy":"\u003Cp\u003EEarly Bird Full Season Passes are 95% sold, don\u0027t wait too long! \u003Ca class=\u0022f-icon button-arrow\u0022 href=\u0022\/node\/346\u0022 data-entity-type=\u0022node\u0022 data-entity-uuid=\u00226f3a90aa-4605-4c3f-90bb-8bca91822dfd\u0022 data-entity-substitution=\u0022canonical\u0022\u003E\u003Cstrong\u003EBUY NOW\u003C\/strong\u003E\u003C\/a\u003E\u003C\/p\u003E"},"user":{"uid":0,"permissionsHash":"2d62779262a066405e96fad4f75866067d270f38be8b47eb468047dc51d1a3cc"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0"></script>
+<script src="/sites/default/files/js/js_4wPmYYhjEXsf9e_BiQXnhs2tIkHCUNcBXnJpzZC59A8.js?scope=footer&amp;delta=1&amp;language=en&amp;theme=origin&amp;include=eJxLzNRPzIxPz8lPSszRyUmsqtQHETr5RZnpmXn6icnJqcXF-Ujc_KKUzPw8mACEAgB-Qxoz"></script>
+<script src="https://mtseymour.secure-cdn.na2.accessoticketing.com/embed/accesso.js"></script>
+<script src="/sites/default/files/js/js_a5xnKUrTUIGZXgtdB8I7o7Ijp6gQXtt5mqLVJ87kql4.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=origin&amp;include=eJxLzNRPzIxPz8lPSszRyUmsqtQHETr5RZnpmXn6icnJqcXF-Ujc_KKUzPw8mACEAgB-Qxoz"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-inview@1.1.2/jquery.inview.min.js"></script>
+<script src="/sites/default/files/js/js_RWmIqH48iJnFvhUZIUO-5lqbh4qefehCOFH7WoHgyt0.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=origin&amp;include=eJxLzNRPzIxPz8lPSszRyUmsqtQHETr5RZnpmXn6icnJqcXF-Ujc_KKUzPw8mACEAgB-Qxoz"></script>
+
+
+</body>
+
+</html>
