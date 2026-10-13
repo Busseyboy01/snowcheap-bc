@@ -30,7 +30,7 @@ def fetch(url):
         except Exception as ex: cache[url] = (str(ex), "")
     return cache[url]
 
-ok, flags, expired = [], [], []
+ok, flags, expired, manual = [], [], [], []
 for d in data["deals"]:
     exp = dt.date.fromisoformat(d["expiry_date"]) if d.get("expiry_date") else None
     if exp and exp < today:
@@ -38,6 +38,7 @@ for d in data["deals"]:
         if "--mark-expired" in sys.argv: d["status"] = "expired"
         continue
     if exp and (exp - today).days <= 2: flags.append((d, f"expires soon ({exp})"))
+    if d.get("manual_check"): manual.append(d); continue
     if not allowed(d["source_url"]): flags.append((d, "robots.txt now disallows source - remove or verify manually")); continue
     err, text = fetch(d["source_url"])
     if err: flags.append((d, f"fetch failed: {err}")); continue
@@ -49,9 +50,10 @@ for d in data["deals"]:
     else:
         ok.append(d)
 
-lines = [f"# Change report {today}", f"- OK (all check strings present): {len(ok)}", f"- Flagged: {len(flags)}", f"- Expired (auto-moved to archive by build.py): {len(expired)}", ""]
+lines = [f"# Change report {today}", f"- OK (all check strings present): {len(ok)}", f"- Flagged: {len(flags)}", f"- Expired (auto-moved to archive by build.py): {len(expired)}", f"- Needs browser check (manual_check): {len(manual)}", ""]
 lines += ["## Flagged - review manually"] + [f"- **{d['id']}**: {why}  \n  {d['source_url']}" for d, why in flags] + [""]
 lines += ["## Expired"] + [f"- {d['id']} (expired {d['expiry_date']})" for d in expired] + [""]
+lines += ["## Needs browser check (JS pages; verify in a browser, then bump last_verified)"] + [f"- {d['id']} (last verified {d['last_verified']})  \n  {d['source_url']}" for d in manual] + [""]
 lines += ["## OK"] + [f"- {d['id']}" for d in ok]
 rep = "\n".join(lines); (ROOT / "reports").mkdir(exist_ok=True); (ROOT / "reports" / f"{today}.md").write_text(rep); print(rep)
 if "--mark-expired" in sys.argv: (ROOT / "deals.json").write_text(json.dumps(data, indent=1, ensure_ascii=False))

@@ -8,6 +8,8 @@ Site is built from `deals.json` by `build.py` into `docs/` (GitHub Pages serves 
 - Respect robots.txt (`update.py` checks it). Do not use MEC (robots.txt disallows all).
 - Keep `affiliate_url` empty until a real affiliate link exists; the template uses it automatically when filled.
 
+- Deals with `manual_check: true` are on JavaScript-only pages. update.py lists them under **Needs browser check**: open each in a browser, then confirm the prices and bump `last_verified`.
+
 ## Steps (once a day)
 1. `cd /workspace/skideals && git pull`
 2. `python3 update.py` → prints and saves `reports/YYYY-MM-DD.md`.
