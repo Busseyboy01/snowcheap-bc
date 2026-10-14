@@ -9,3 +9,6 @@ Re-checked JS pass pages via live fetch (prices visible in page content).
 
 ## Still needs browser (shop SPA blocked fetch)
 - revelstoke-midweek-eb-2627 (last verified 2026-10-12): early bird Adult Midweek $1,879 / regular $2,349, ends Nov 30
+
+## Later verification (~4:10 PM PT)
+- revelstoke-midweek-eb-2627: confirmed Adult Midweek $1,879 / Adult Individual $2,349 on https://www.revelstokemountainresort.com/tickets-passes/winter-passes/; bumped last_verified; switched source_url to that page; clear manual_check
