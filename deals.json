@@ -177,21 +177,22 @@
     },
     {
       "id": "winter-extreme-swap-vancouver-2026",
-      "title": "Winter Extreme Ski & Board Swap (Canadian Ski Patrol) - Oct 17-18",
+      "title": "Winter Extreme Ski & Board Swap Vancouver - Oct 17-18 (tickets 20% off through Oct 16)",
       "category": "swaps and events",
       "resort": "Fairgrounds Public Racket Club - Capilano, North Vancouver",
-      "price": "$5 entry",
-      "regular_price": null,
-      "url": "https://www.skipatrol.ca/winterextreme/vancouver/",
-      "source_url": "https://www.skipatrol.ca/winterextreme/vancouver/",
+      "price": "from $4 online",
+      "regular_price": "$5 at door",
+      "url": "https://www.winterextreme.ca/en/events/vancouver-winter-extreme-ski-board-sale",
+      "source_url": "https://www.winterextreme.ca/en/events/vancouver-winter-extreme-ski-board-sale",
       "start_date": "2026-10-17",
       "expiry_date": "2026-10-18",
       "last_verified": "2026-10-15",
-      "notes": "Sat 9am-5pm, Sun 10am-4pm. Adults $5, kids 6-12 $2, family $10. Sunday 25% off red tags. Gear check-in Fri Oct 16 3-7pm.",
+      "notes": "Advance tickets 20% off through Oct 16: ages 13+ $4, kids 6-12 $1.60, family $8 (door $5 / $2 / $10). Sale Sat Oct 17 9am-5pm, Sun Oct 18 10am-4pm at Fairgrounds Public Racket Club, Capilano Mall, North Vancouver. Sunday red-tag 25% off. Gear drop-off Fri Oct 16: this page lists 5-9pm; Ski Patrol Vancouver page lists 3-7pm - confirm before you go.",
       "affiliate_url": "",
       "check": [
-        "October 17",
-        "$5.00"
+        "$4.00",
+        "Save 20%",
+        "Oct 17"
       ]
     },
     {
@@ -300,6 +301,46 @@
         "Midweek Pass"
       ],
       "manual_check": false
+    },
+    {
+      "id": "winter-extreme-swap-kamloops-2026",
+      "title": "Winter Extreme Ski & Board Sale Kamloops - Nov 7",
+      "category": "swaps and events",
+      "resort": "Art Knapp Garden Centre - Kamloops",
+      "price": "$2 entry",
+      "regular_price": null,
+      "url": "https://www.winterextreme.ca/en/events/kamloops-winter-extreme-ski-board-sale",
+      "source_url": "https://www.winterextreme.ca/en/events/kamloops-winter-extreme-ski-board-sale",
+      "start_date": "2026-11-07",
+      "expiry_date": "2026-11-07",
+      "last_verified": "2026-10-15",
+      "notes": "Sat Nov 7 9am-3pm at Art Knapp, 420 Nunavut Way, Kamloops. Adults $2 (cash preferred), kids under 12 free. Red tags 25% off after 1pm. Gear drop-off Fri Nov 6 5-8pm; unsold pickup Sat Nov 7 5-7pm.",
+      "affiliate_url": "",
+      "check": [
+        "$2.00",
+        "November 7",
+        "November 6"
+      ]
+    },
+    {
+      "id": "winter-extreme-swap-abbotsford-2026",
+      "title": "Winter Extreme Ski & Board Swap Abbotsford - Nov 14-15",
+      "category": "swaps and events",
+      "resort": "AG-Rec Building, Exhibition Park - Abbotsford",
+      "price": "$2 entry",
+      "regular_price": null,
+      "url": "https://www.skipatrol.ca/winterextreme/abbotsford/",
+      "source_url": "https://www.skipatrol.ca/winterextreme/abbotsford/",
+      "start_date": "2026-11-14",
+      "expiry_date": "2026-11-15",
+      "last_verified": "2026-10-15",
+      "notes": "Sat Nov 14 9am-5pm, Sun Nov 15 10am-3pm at AG-Rec Building, 32470 Haida Drive. Adults $2, kids 6-12 $1, family $5. Gear check-in Fri Nov 13 3-7pm. Unsold consignment pickup at Replay Board Shop (dates on source page).",
+      "affiliate_url": "",
+      "check": [
+        "November 14",
+        "$2:00",
+        "November 13"
+      ]
     }
   ]
 }
